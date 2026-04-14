@@ -1,0 +1,252 @@
+:root {
+    --background-cream: #FDFCF0;
+    --cards-tan: #CBBD93;
+    --accent-orange: #FFB16E;
+    --nav-gold: #CCA25A;
+
+    --text-main: #2D2926;
+    --text-light: #FFFFFF;
+
+    --transition-smooth: 0.3s ease;
+}
+
+
+header h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    color: var(--text-main);
+    letter-spacing: -1px;
+}
+
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+header h1 a:hover {
+    color: var(--accent-orange);
+    transition: ease 0.15s;
+}
+
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+body {
+    background-color: var(--background-cream);
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    flex: 1;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 400px;
+    height: auto;
+    background-color: var(--cards-tan);
+    color: var(--text-main);
+    border-radius: 15px;
+    border: 4px solid rgba(45, 41, 38, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+
+.card-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(5%) saturate(1215%) hue-rotate(338deg) brightness(96%) contrast(92%);
+}
+
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40 px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-orange);
+}
+
+
+nav ul.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-gold);
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--nav-gold);
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown-menu li a {
+    padding: 12px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+
+.dropdown-menu li a:hover {
+    background-color: var(--accent-orange);
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+.breed-focus-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+
+.breed-card {
+    background-color: var(--cards-tan);
+    color: var(--text-main);
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 800px;
+    text-align: center;
+    border: 4px solid rgba(45, 41, 38, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.breed-image-wrapper {
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid var(--nav-gold);
+}
+
+
+.breed-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.breed-info {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+.page-intro {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.page-intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--text-main);
+    opacity: 0.9;
+}
+
+
+.card-link {
+    text-decoration: none;
+    display: block;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+
+/* customization for images on breeds page */
+.image-card {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid var(--nav-gold);
+}
+
+
+/* customization for cards on breeds page */
+.focus-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 15px;
+}
+
+
+.focus-card {
+    background-color: var(--cards-tan);
+    color: var(--text-main);
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 800px;
+    text-align: center;
+    border: 4px solid rgba(45, 41, 38, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.focus-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40 px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-orange);
+}
