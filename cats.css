@@ -340,3 +340,275 @@ nav ul li a {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+.feeding-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.feeding-discussion {
+    flex: 3;
+    padding: 0 40px;
+    min-width: 500px;
+    color: var(--text-main);
+    text-align: left;
+}
+
+/* All pages are just going to have the grooming wrapper and grooming discussion from here out to prevent too many classes */
+.grooming-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.grooming-discussion {
+    flex: 3;
+    padding: 0 40px;
+    min-width: 500px;
+    color: var(--text-main);
+    text-align: left;
+}
+
+
+/* Same thing applies to images as well */
+.grooming-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.cat-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #d2b48c;
+}
+
+
+th {
+    background-color: var(--nav-gold);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+footer {
+    background-color: var(--nav-gold);
+    color: var(--text-main);
+    padding: 60px 0 40px 0;
+    font-family: inherit;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+footer a {
+    text-decoration: none !important;
+    transition: var(--transition-smooth);
+}
+
+
+footer a:hover {
+    color: var(--accent-orange);
+    text-decoration: underline !important;
+}
+
+
+footer a:visited {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+
+.footer-column-left {
+    flex: 1;
+    text-align: left;
+}
+
+
+.footer-column-center {
+    flex: 1.5;
+    text-align: center;
+}
+
+
+.footer-column-right {
+    flex: 1;
+    text-align: right;
+}
+
+
+.icon-group {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.social-icon {
+    width: 30px;
+    fill: var(--text-main);
+    transition: fill 0.3s ease;
+}
+
+
+.social-icon:hover {
+    fill: #d2b48c;
+}
+
+
+.cfa-image {
+    width: 40px;
+    height: auto;
+    transition: fill 0.3s ease;
+}
+
+
+.adoption-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px
+}
+
+
+.resource-card {
+    background-color: var(--cards-tan);
+    border: 3px solid var(--nav-gold);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: var(--accent-orange);
+}
+
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-orange);
+}
+
+
+.resource-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: var(--nav-gold);
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.resource-link:hover {
+    background-color: var(--accent-orange);
+}
+
+
+.form-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: var(--cards-tan);
+    border-radius: 25px;
+    border: 4px solid rgba(45, 41, 38, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.creator-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.creator-form label {
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+
+.creator-form input,
+.creator-form select,
+.creator-form textarea {
+    padding: 12px;
+    border: 2px solid var(--nav-gold);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
+.creator-form button {
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .adoption-grid {
+        grid-template-columns: 1fr;
+    }
+}
